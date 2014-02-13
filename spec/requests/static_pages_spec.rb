@@ -50,7 +50,6 @@ describe "Static pages" do
     expect(page).to have_title(full_title('Contact'))
     
     click_link "Home"
-    # expect(page).to have_title(full_title('Sample App'))
     click_link "sample app"
     expect(page).to have_title(full_title('Sample App'))
   end
