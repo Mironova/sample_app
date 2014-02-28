@@ -54,10 +54,20 @@ describe "User pages" do
   end
 
   describe "profile page" do
-  	let(:user) {FactoryGirl.create(:user)}
-  	before {visit user_path(user)}
+  	let(:user) { FactoryGirl.create(:user) }
+    let!(:m1) { FactoryGirl.create(:micropost, user: user, content: "foo") }
+    let!(:m2) { FactoryGirl.create(:micropost, user: user, content: "bar") }
+
+  	before { visit user_path(user) }
+
   	it { should have_content(user.name) }
     it { should have_title(user.name) }
+
+    describe "microposts" do
+      it { should have_content(m1.content) }
+      it { should have_content(m2.content) }
+      it { should have_content(user.microposts.count) }
+    end
   end
 
   describe "edit" do
@@ -132,7 +142,7 @@ describe "signup page" do
       end
 
       describe "followed by signout" do
-        before { click_link "Sign out" }
+        before { click_link signout_path }
         it { should have_link('Sign in') }
       end
 
