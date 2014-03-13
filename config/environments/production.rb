@@ -86,5 +86,6 @@ config.action_mailer.smtp_settings = {
   user_name:            'iradilema',
   password:             'imironova',
   authentication:       'plain',
+  enable_starttls_auto: true  }
 
 end
