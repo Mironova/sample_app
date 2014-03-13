@@ -84,7 +84,7 @@ SampleApp::Application.configure do
     port:                 587,
     domain:               'pailin-project.herokuapp.com',
     user_name:            'iradilema@gmail.com',
-    password:             'imironova1989',
+    password:             'imironova2002',
     authentication:       'plain',
     enable_starttls_auto: true  }
 
