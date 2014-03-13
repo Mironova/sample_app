@@ -83,7 +83,7 @@ SampleApp::Application.configure do
     address:              'smtp.gmail.com',
     port:                 587,
     domain:               'pailin-project.herokuapp.com',
-    user_name:            'iradilema',
+    user_name:            'iradilema@gmail.com',
     password:             'imironova',
     authentication:       'plain',
     enable_starttls_auto: true  }
