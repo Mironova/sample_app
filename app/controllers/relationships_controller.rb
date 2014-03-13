@@ -8,6 +8,7 @@ class RelationshipsController < ApplicationController
 			format.html { redirect_to @user }
 			format.js
 		end
+		UserMailer.follow_notification(@user, current_user).deliver
 	end
 
 	def destroy
