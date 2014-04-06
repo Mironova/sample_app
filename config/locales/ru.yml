@@ -1,0 +1,59 @@
+ru:
+ static_pages:
+  home:
+   welcome: "Добро пожаловать в Sample App"
+   text1: "Это домашняя страница для "
+   text2: "пробного приложения."
+   btn: "Зарегистрироваться сейчас!"
+  help:
+   title: "Помощь"
+   text1: "Получите помощь Ruby on Rails Tutorial на"
+   text2: "Чтобы получить помощь по пробному приложению, смотрите "
+   page: "странице помощи Rails Tutorial"
+   book: "книгу Rails Tutorial"
+  contact:
+   title: "Контакты"
+   text: "Свяжись с Ruby on Rails Tutorial about the sample app at the"
+   page: "странице контактов"
+  about: 
+   title: "О нас"
+   text1: ""
+   text2: "это проект, постороенный на книге и скринкастах, для обучения веб разработке с помощью"
+   text3: ". Это пример приложения для обучения"
+ footer:
+  about: "О нас"
+  contact: "Контакты"
+  news: "Новости"
+ header:
+  home: "Главная"
+  help: "Помощь"
+  users: "Пользователи"
+  account: "Аккаунт"
+  profile: "Профиль"
+  settings: "Настройки"
+  signout: "Выйти"
+  signin: "Войти"
+ users:
+  show:
+   view_profile: "посмотреть мой профиль"
+   microposts: "Микропосты: "
+   micropost: "Микропосты "
+  new:
+   signup: "Зарегистрироваться"
+   btn: "Создать мой аккаунт"
+  all: "Все пользователи"
+  edit: 
+   title: "Редактировать профиль"
+   subtitle: "Обновить свой профиль"
+   btn: "Сохранить изменения"
+   change: " изменить"
+   delete: "удалить"
+   confirm: "Вы уверены?"
+  unfollow: "Не следить"
+  follow: "Следить"
+ activerecord:
+  attributes:
+   user:
+    name: "Имя"
+    password: "Пароль"
+    password_confirmation: "Подтверждение пароля"

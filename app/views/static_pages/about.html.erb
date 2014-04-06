@@ -1,9 +1,8 @@
-<% provide(:title, 'About Us') %>
-	<h1>About Us</h1>
+<% provide(:title, t('static_pages.about.title')) %>
+	<h1><%= t('static_pages.about.title') %></h1>
 	<p>
-		The	<a href="http://railstutorial.org/help">Ruby on Rails Tutorial</a>
-		is a project to make a book and screencasts to teach web development with 
-		<a href="http://railstutorial.org/book">Ruby on Rails</a>. This
-		is the sample application for the tutorial
+		<%= t('static_pages.about.text1') %><a href="http://railstutorial.org/help">Ruby on Rails Tutorial</a>
+		<%= t('static_pages.about.text2') %>
+		<a href="http://railstutorial.org/book">Ruby on Rails</a><%= t('static_pages.about.text3') %>
 	</p>
 	
