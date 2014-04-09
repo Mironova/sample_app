@@ -42,6 +42,14 @@ class User < ActiveRecord::Base
 		"#{id} #{name}".parameterize
 	end
 
+	def self.search(search)
+		if search
+      where('name LIKE ?', "%#{search}%") 
+    else
+      all
+    end		
+	end
+
 	private
 		def create_remember_token
 			self.remember_token = User.encrypt(User.new_remember_token)
